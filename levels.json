@@ -1,0 +1,386 @@
+{ 
+     "levels": {
+          "K": {
+               "units": {
+                    "1-3" : {
+                         "columns" : 7,
+                         "tiles": ["a","b","c","d","e","f","",
+                                   "g","h","i","j","k","l","",
+                                   "m","n","o","p","qu","r","s",
+                                   "t","u","v","w","x","y","z"]
+                    },
+                    "4-5": {
+                         "columns" : 7,
+                         "tiles": ["a","b","c","d","e","f","",
+                                   "g","h","i","j","k","l","",
+                                   "m", "n", "o", "p", "qu", "r", "s",
+                                   "t", "u", "v", "w", "x", "y", "z",
+                                   "wh", "ch", "sh", "th", "ck", "", ""]
+                    }
+               }
+          },
+          "1": {
+               "units": {
+                    "1-2": {
+                         "name": "1-2",
+                         "columns" : 7,
+                         "tiles": ["a","b","c","d","e","f","",
+                                   "g","h","i","j","k","l","",
+                                   "m","n","o","p","qu","r","s",
+                                   "t","u","v","w","x","y","z"]
+                    },
+                    "3": {
+                         "name": "3",
+                         "columns" : 7,
+                         "tiles": ["a1","b","c","d","e","f","",
+                                   "g","h","i","j","k","l","",
+                                   "m", "n", "o", "p", "qu", "r", "s",
+                                   "t", "u", "v", "w", "x", "y", "z",
+                                   "wh", "ch", "sh", "th", "ck", "", ""]
+                    },
+                    "4": {
+                         "name": "4",
+                         "columns" : 7,
+                         "tiles": ["a","b","c","d","e","f","",
+                                   "g","h","i","j","k","l","",
+                                   "m", "n", "o", "p", "qu", "r", "s",
+                                   "t", "u", "v", "w", "x", "y", "z",
+                                   "wh", "ch", "sh", "th", "ck", "", "",
+                                   "f", "l", "s", "all", "", "", ""]
+                    },
+                    "5": {
+                         "name": "5",
+                         "columns" :7,
+                         "tiles": ["a","b","c","d","e","f","",
+                                   "g","h","i","j","k","l","",
+                                   "m", "n", "o", "p", "qu", "r", "s",
+                                   "t", "u", "v", "w", "x", "y", "z",
+                                   "wh", "ch", "sh", "th", "ck", "", "",
+                                   "f", "l", "s", "all", "am", "an", ""]
+                    },
+                    "6": {
+                         "name": "6",
+                         "columns" :7,
+                         "tiles": ["a","b","c","d","e","f","",
+                                   "g","h","i","j","k","l","",
+                                   "m", "n", "o", "p", "qu", "r", "s",
+                                   "t", "u", "v", "w", "x", "y", "z",
+                                   "wh", "ch", "sh", "th", "ck", "", "",
+                                   "f", "l", "s", "all", "", "", ""]
+                    },
+                    "7-10": {
+                         "name": "7-10",
+                         "columns" :9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "", "", "", "",
+                                   "f", "l", "s", "all", "am", "an", "", "", ""]
+                    },
+                    "11-14": {
+                         "name": "11-14",
+                         "columns" :9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "", "", "", "",
+                                   "f", "l", "s", "all", "am", "an", "", "", ""]
+                    }
+               }
+          },
+          "2": {
+               "units": {
+                    "1": {
+                         "columns" : 7,
+                         "tiles": ["a","b","c","d","e","f","",
+                                   "g","h","i","j","k","l","",
+                                   "m", "n", "o", "p", "qu", "r", "s",
+                                   "t", "u", "v", "w", "x", "y", "z",
+                                   "wh", "ch", "sh", "th", "ck", "", ""]
+                    },
+                    "2": {
+                         "columns" : 9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "", "", "", "",
+                                   "f", "l", "s", "all", "am", "an", "", "", ""]
+                    },
+                    "3": {
+                         "columns" : 9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "", "", "", "",
+                                   "f", "l", "s", "all", "am", "an", "", "", "",
+                                   "ild", "ind", "old", "olt", "ost", "", "", "", ""]
+                    },
+                    "4-5": {
+                         "columns" : 9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "", "", "", "",
+                                   "f", "l", "s", "all", "am", "an", "", "", "",
+                                   "ild", "ind", "old", "olt", "ost", "", "", "", ""]
+                    },
+                    "6": {
+                         "columns" : 9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "", "", "", "",
+                                   "f", "l", "s", "all", "am", "an", "", "", "",
+                                   "ild", "ind", "old", "olt", "ost", "ive", "", "", ""]
+                    },
+                    "7": {
+                         "columns" : 9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "y", "", "", "",
+                                   "f", "l", "s", "all", "am", "an", "", "", "",
+                                   "ild", "ind", "old", "olt", "ost", "ive", "", "", ""]
+                    },
+                    "8": {
+                         "columns" : 9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "y", "", "", "",
+                                   "f", "l", "s", "all", "am", "an", "", "", "",
+                                   "ild", "ind", "old", "olt", "ost", "ive", "", "", "",
+                                   "ar", "or"]
+                    },
+                    "9": {
+                         "columns" : 9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "y", "", "", "",
+                                   "f", "l", "s", "all", "am", "an", "", "", "",
+                                   "ild", "ind", "old", "olt", "ost", "ive", "", "", "",
+                                   "ar", "or", "er", "ir", "ur"]
+                    },
+                    "10": {
+                         "columns" : 9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "y", "", "ai", "ay",
+                                   "f", "l", "s", "all", "am", "an", "", "", "",
+                                   "ild", "ind", "old", "olt", "ost", "ive", "", "", "",
+                                   "ar", "or", "er", "ir", "ur"]
+                    },
+                    "11": {
+                         "columns" : 9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "y", "", "ai", "ay",
+                                   "f", "l", "s", "all", "am", "an", "ee", "ea", "ey",
+                                   "ild", "ind", "old", "olt", "ost", "ive", "", "", "",
+                                   "ar", "or", "er", "ir", "ur"]
+                    },
+                    "12": {
+                         "columns" : 9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "y", "", "ai", "ay",
+                                   "f", "l", "s", "all", "am", "an", "ee", "ea", "ey",
+                                   "ild", "ind", "old", "olt", "ost", "ive", "", "oi", "oy",
+                                   "ar", "or", "er", "ir", "ur"]
+                    },
+                    "13": {
+                         "columns" : 9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "y", "", "ai", "ay",
+                                   "f", "l", "s", "all", "am", "an", "ee", "ea", "ey",
+                                   "ild", "ind", "old", "olt", "ost", "ive", "", "oi", "oy",
+                                   "ar", "or", "er", "ir", "ur", "", "oa", "oe", "ow"]
+                    },
+                    "14": {
+                         "columns" : 9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "y", "", "ai", "ay",
+                                   "f", "l", "s", "all", "am", "an", "ee", "ea", "ey",
+                                   "ild", "ind", "old", "olt", "ost", "ive", "", "oi", "oy",
+                                   "ar", "or", "er", "ir", "ur", "", "oa", "oe", "ow",
+                                   "", "", "", "", "", "ou", "", "", ""]
+                    },
+                    "15": {
+                         "columns" : 9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "y", "", "ai", "ay",
+                                   "f", "l", "s", "all", "am", "an", "ee", "ea", "ey",
+                                   "ild", "ind", "old", "olt", "ost", "ive", "", "oi", "oy",
+                                   "ar", "or", "er", "ir", "ur", "", "oa", "oe", "ow",
+                                   "", "", "", "", "", "ou", "oo", "ue", "ew"]
+                    },
+                    "16-17": {
+                         "columns" : 9,
+                         "tiles": ["a", "b", "c", "d", "e", "f", "", "ang", "ank",
+                                   "g", "h", "i", "j", "k", "l", "", "ing", "ink",
+                                   "m", "n", "o", "p", "qu", "r", "s", "ong", "onk",
+                                   "t", "u", "v", "w", "x", "y", "z", "ung", "unk",
+                                   "wh", "ch", "sh", "th", "ck", "y", "", "ai", "ay",
+                                   "f", "l", "s", "all", "am", "an", "ee", "ea", "ey",
+                                   "ild", "ind", "old", "olt", "ost", "ive", "", "oi", "oy",
+                                   "ar", "or", "er", "ir", "ur", "", "oa", "oe", "ow",
+                                   "", "", "", "", "", "ou", "oo", "ue", "ew",
+                                   "", "", "", "", "", "au", "aw"]
+                    }
+               }
+          },
+          "3": {
+               "units": {
+                    "1": {
+                         "columns" : 9,
+                         "tiles": ["a","b","c","d","e","f","","ang","ank",
+                                   "g","h","i","j","k","l","","ing", "ink",
+                                   "m","n","o","p","qu","r","s","ong","onk",
+                                   "t","u","v","w","x","y","z","ung","unk",
+                                   "wh","ch","sh","th","ck","tch","","","",
+                                   "all","am","an","","","","","","",
+                                   "ild","ind","old","olt","ost","","","",""]
+                    },
+                    "2": {
+                         "columns" : 9,
+                         "tiles": ["a","b","c","d","e","f","","ang","ank",
+                                   "g","h","i","j","k","l","","ing", "ink",
+                                   "m","n","o","p","qu","r","s","ong","onk",
+                                   "t","u","v","w","x","y","z","ung","unk",
+                                   "wh","ch","sh","th","ck","tch","","","",
+                                   "all","am","an","","","","","","",
+                                   "ild","ind","old","olt","ost","","","",""]
+                    },
+                    "3": {
+                         "columns" : 9,
+                         "tiles": ["a","b","c","d","e","f","","ang","ank",
+                                   "g","h","i","j","k","l","","ing", "ink",
+                                   "m","n","o","p","qu","r","s","ong","onk",
+                                   "t","u","v","w","x","y","z","ung","unk",
+                                   "wh","ch","sh","th","ck","tch","","","",
+                                   "all","am","an","","","","","","",
+                                   "ild","ind","old","olt","ost","","","",""]
+                    },
+                    "4": {
+                         "columns" : 9,
+                         "tiles": ["a","b","c","d","e","f","","ang","ank",
+                                   "g","h","i","j","k","l","","ing", "ink",
+                                   "m","n","o","p","qu","r","s","ong","onk",
+                                   "t","u","v","w","x","y","z","ung","unk",
+                                   "wh","ch","sh","th","ck","tch","","","",
+                                   "all","am","an","","","","","","",
+                                   "ild","ind","old","olt","ost","ive","","",""]
+                    },                   
+                    "5": {
+                         "columns" : 9,
+                         "tiles": ["a","b","c","d","e","f","ə","ang","ank",
+                                   "g","h","i","j","k","l","","ing", "ink",
+                                   "m","n","o","p","qu","r","s","ong","onk",
+                                   "t","u","v","w","x","y","z","ung","unk",
+                                   "wh","ch","sh","th","ck","tch","","","",
+                                   "all","am","an","","","","","","",
+                                   "ild","ind","old","olt","ost","ive","","",""]
+                    },
+                    "6-7": {
+                         "columns" : 9,
+                         "tiles": ["a","b","c","d","e","f","ə","ang","ank",
+                                   "g","h","i","j","k","l","","ing", "ink",
+                                   "m","n","o","p","qu","r","s","ong","onk",
+                                   "t","u","v","w","x","y_vowel","z","ung","unk",
+                                   "wh","ch","sh","th","ck","tch","y","","",
+                                   "all","am","an","","","","","","",
+                                   "ild","ind","old","olt","ost","ive","","",""]
+                    },
+                    "8": {
+                         "columns" : 9,
+                         "tiles": ["a","b","c","d","e","f","ə","ang","ank",
+                                   "g","h","i","j","k","l","","ing", "ink",
+                                   "m","n","o","p","qu","r","s","ong","onk",
+                                   "t","u","v","w","x","y_vowel","z","ung","unk",
+                                   "wh","ch","sh","th","ck","tch","y","","",
+                                   "all","am","an","","","","","","",
+                                   "ild","ind","old","olt","ost","ive","stle","tion","sion"]
+                    },
+                    "9": {
+                         "columns" : 9,
+                         "tiles": ["a","b","c","d","e","f","ə","ang","ank",
+                                   "g","h","i","j","k","l","","ing", "ink",
+                                   "m","n","o","p","qu","r","s","ong","onk",
+                                   "t","u","v","w","x","y_vowel","z","ung","unk",
+                                   "wh","ch","sh","th","ck","tch","y","","",
+                                   "all","am","an","","","","","","",
+                                   "ild","ind","old","olt","ost","ive","stle","tion","sion",
+                                   "ar", "or", "er", "ir", "ur"]
+                    },
+                    "10-11": {
+                         "columns" : 7,
+                         "tiles": ["a","e","i","o","u","y_vowel","ə",
+                                   "wh","ch","sh","th","ck","tch","",
+                                   "ive","stle","tion","sion","","","",
+                                   "ar", "er", "ir", "or", "ur","","",
+                                   "ai","ay","eigh","ei","","","",
+                                   "ee","ey","ie","ea","","","",
+                                   "igh","oa","oe","ow","","","",
+                                   "ou","ui","ue","ew","oo","","",
+                                   "oi","oy","au","aw","","",""]
+                    },
+                    "12": {
+                         "columns" : 7,
+                         "tiles": ["a","e","i","o","u","y_vowel","ə",
+                                   "c","s","g","j","n","","",
+                                   "wh","ch","sh","th","ck","tch","dge",
+                                   "ar", "er", "ir", "or", "ur","","",
+                                   "ai","ay","eigh","ei","","","",
+                                   "ee","ey","ie","ea","","","",
+                                   "igh","oa","oe","ow","","","",
+                                   "ou","ui","ue","ew","oo","","",
+                                   "oi","oy","au","aw","","",""]
+                    },
+                    "13": {
+                         "columns" : 8,
+                         "tiles": ["a","b","c","d","e","f","ə","",
+                                   "g","h","i","j","k","l","","",
+                                   "m", "n", "o", "p", "qu", "r", "s","",
+                                   "t", "u", "v", "w", "x", "y", "z","y_vowel",
+                                   "wh", "ch", "sh", "th", "ph", "ck", "tch", "dge",
+                                   "wr", "rh", "gn", "kn", "mn", "mb", "gh", ""]
+                    },
+                    "14": {
+                         "columns" : 8,
+                         "tiles": ["a","b","c","d","e","f","ə","",
+                                   "g","h","i","j","k","l","","",
+                                   "m", "n", "o", "p", "qu", "r", "s","",
+                                   "t", "u", "v", "w", "x", "y", "z","y_vowel",
+                                   "wh", "ch", "sh", "th", "ph", "ck", "tch", "dge",
+                                   "wr", "rh", "gn", "kn", "mn", "mb", "gh", "",
+                                   "tion","sion","ture","tu","ti","ci","",""]
+                    }
+               }
+          }
+     }
+}

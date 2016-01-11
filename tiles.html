@@ -1,0 +1,603 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="jquery.ui.touch-punch.min.js"></script>
+    </head>
+    <body>
+        <style>
+            /*layout*/
+            *{
+                font-family:helvetica;
+            }
+            .appWrapper{
+                padding: 10px;
+                max-width: 760px;
+                margin: auto;
+            }
+            .left{
+                width:33%;
+                min-height: 1px;
+                display:inline-block;
+                vertical-align:top;
+            }
+            .left-inner{
+                padding-top:50px;
+            }
+            .right h2{
+                    margin: 0;
+            }
+            .right{
+                width:66%;
+                min-height: 1px;
+                display:inline-block;
+            }
+            .sc{
+                width: 40px;
+                height: 50px;
+                border-radius: 4px;
+                text-align:center;
+                box-shadow: gray 2px 2px 2px -1px;
+                cursor:pointer;
+                display:inline-block;
+                margin:4px;
+            }
+            .sc-membrane{
+                display:table;
+                width: 100%;
+                height: 100%;
+            }
+            .green{
+                background:#C1D7AC;
+            }
+            .yellow{
+                background:#FAE79A;
+            }
+            .salmon{
+                background:#EDC7BC;
+            }
+            .unknownColor{
+                background: red;
+                color: white;
+            }
+            .sc span{
+                display:table-cell;
+                vertical-align:middle;
+                font-size:22px;
+                font-family: 'times new roman';
+            }
+            .dragTarget{
+                display:table;
+                height: 250px;
+                width: 190px;
+                border: solid gray 1px;
+                border-radius: 10px;
+                position:relative;
+            }
+            .dragText{
+                margin: auto;
+                display: table-cell;
+                vertical-align: middle; 
+            }
+            .dragText span{
+                color: #DC8888;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 1.5;
+                width: 75%;
+                display: block;
+                margin: auto;
+                text-align: center;
+            }
+            .dragTarget, .dragText span{
+                transition:all 150ms;
+            }
+            .unitSelector{
+            }
+            .sectionHeading{
+                height:45px;
+                display:table;
+            }
+            .sectionHeading-inner{
+                vertical-align: bottom;
+                display: table-cell;
+                padding-bottom: 8px;
+            }
+            .sectionHeading-inner > *{
+                display:inline-block;
+            }
+            .helperText{
+                border-top: 1px solid #ddd;
+                margin-top: 20px;
+                padding:10px 0;
+            }
+            .helperText p{
+                display: inline;
+                margin:0;
+            }
+            .currentCard{
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                border-radius: 10px;
+            }
+            .currentCard span{
+                font-size:100px;
+            }
+            .controls{
+                width:190px;
+            }
+            .controls button{
+                padding: 10px;
+                width: 100%;
+                background: white;
+                border: solid 1px lightgray;
+                border-radius: 5px;
+                font-size: 14px;
+                cursor: pointer;
+                margin: 15px 0 0 0;
+                outline:none;
+            }
+            .hiddenTile{
+                visibility:hidden;
+            }
+            .ui-draggable-dragging{
+                z-index:2;
+            }
+            .highlightTarget{
+                    background: #FFFEF8;
+            }
+            .highlightTarget span{
+                opacity:0;
+            }
+
+            /*bootstrap */
+            .nav-tabs {
+                border-bottom: 1px solid #ddd;
+                float:left;
+                width:100%;
+                padding-left: 10px;
+                margin: 0 0 20px 0;
+            }
+            nav{
+                list-style-type:none;
+            }
+            .nav-tabs>li.activeTab>a, .nav-tabs>li.activeTab>a:focus, .nav-tabs>li.activeTab>a:hover {
+                color: #555;
+                cursor: default;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-bottom-color: transparent;
+            }
+            .nav-tabs>li>a {
+                margin-right: 5px;
+                line-height: 1.42857143;
+                border: 1px solid transparent;
+                border-radius: 4px 4px 0 0;
+            }
+            .nav>li>a {
+                position: relative;
+                display: block;
+                padding: 10px 15px;
+            }
+            .nav-tabs>li {
+                float: left;
+                margin-bottom: -1px;
+            }
+            .nav>li {
+                position: relative;
+                display: block;
+            }
+            
+            .nav-tabs>li.activeTab>a, .nav-tabs>li.activeTab>a:focus, .nav-tabs>li.activeTab>a:hover {
+                color: #555;
+                cursor: default;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-bottom-color: transparent;
+            }
+            .nav-tabs>li>a{
+                margin-right: 2px;
+                line-height: 1.42857143;
+                border: 1px solid transparent;
+                border-radius: 4px 4px 0 0;
+            }
+            a{
+                color: #337ab7;
+                text-decoration: none;
+            }
+            .dropdown-menu{
+                position: absolute;
+                display: none;
+                z-index: 1;
+                background: white;
+                list-style-type: none;
+                margin: 0;
+                left: 0;
+                padding: 0;
+                font-size: 18px;
+                border: 1px solid rgba(0,0,0,.15);
+                border-radius: 4px;
+            }
+            .dropdown-menu li{
+                padding: 5px 15px;
+                border-bottom: solid rgba(0,0,0,.15) 1px;
+                cursor:pointer;
+                white-space: nowrap;
+            }
+            .unitBtn{
+                position:relative;
+            }
+            .unitBtn button{
+                padding: 0;
+                background: transparent;
+                border: none;
+                font-size: 24px;
+                font-weight: 400;
+                vertical-align: bottom;
+                display: table;
+            }
+            .unitBtn label{
+                display: table-cell;
+                vertical-align: bottom;
+            }
+            .unitBtn .caret{
+                background: url(double-caret.png);
+                background-repeat: no-repeat;
+                display: inline-block;
+                width: 10px;
+                height: 18px;
+                    margin-left: 10px;
+            }
+            .separator{
+                font-size: 26px;
+                margin: 0 15px;
+            }
+        </style>
+        <div class="appWrapper"  style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;"  onmousedown="return false;">
+        <div class="nav-wrapper">    
+            <ul class="nav nav-tabs"></ul>
+            </div> 
+            <div>
+                <div class="left">
+                    <div class="left-inner">
+                        <div class="dragTarget">
+                            <div class="dragText">
+                                <span>Drag a card into this place holder to hear its letter-keyword-sound</span>
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <button onclick="resetCard()">Clear</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right" after-render="missionCompled">
+                    <div id="cardGrid">
+                        <div class="sectionHeading">
+                            <div class="sectionHeading-inner">
+                                <h2 id="levelHeading"></h2>
+                                <span class="separator">|</span>
+                                <!-- Large button group -->
+                                <div class="unitBtn">
+                                    <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="showUnitMenu()">
+                                        <span class="btnText" id="unitHeading"></span>
+                                        <span class="caret" style="background:url(double-caret.png)"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardGrid-inner">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="helperText">
+                    <p>This sound display demonstrates all sounds taught in Unit&nbsp;</p><p id="pUnit"></p><p>. Do not teach all these sounds at one time.  Be sure to present these sounds according to the scope and sequence specified in the Fundations Level&nbsp;</p><p id="pLevel"></p><p> Manual.</p>
+                </div> 
+            </div>
+        </div>
+        
+        <script>
+        var clickedLevel;
+        var level;
+        var unit;
+        var columns;
+        var cardData;
+        var cardProps;
+        var cardColor;
+        var card;
+        var sound = '';
+        var unitsArray;
+        var unitsIntArray;
+        var unitsStrArray;
+
+
+
+        $.ajax({
+            url: "http://www.wilsonlanguage.com/apps/FUN_Sound_Demonstrations/levels.json", 
+            dataType: 'json',
+            type: 'get',
+            cache: false,
+            success: function(data){
+                cardData = data;
+
+                $.ajax({
+                    url: "http://www.wilsonlanguage.com/apps/FUN_Sound_Demonstrations/cardprops.json",
+                    dataType: 'json',
+                    type: 'get',
+                    cache: false,  
+                    success: function(cardproperties){
+
+                        for(var l in cardData.levels) {
+                            level = l;
+                            break;
+                        }
+                        setFirstUnit();
+                        cardProps = cardproperties;   
+                        levelTabs();
+                        setLayout();      
+                    },
+                    error: function(cardproperties) { console.log('error getting card properties') }          
+                });
+                
+                
+
+            },
+            error: function(data) { console.log('error getting level info') }
+        }); 
+
+
+    //set first unit in new level
+        function setFirstUnit(){
+
+        // since the units aren't always integers, we're going to create an array that stores the units as strings, and one that stores the units as integers, splitting the integers appearing pefore the '-' symbol.
+
+        unitsIntArray = [];
+        unitsStrArray = [];
+        for(var u in cardData.levels[level].units) { 
+            var usplit = u.split("-")[0];
+
+            //add the raw unit value to the array of strings
+            unitsStrArray.push(u);
+            //add the formatted integer to the array of ints.
+            unitsIntArray.push(parseInt(usplit));
+        };  
+
+        //get the index of the min value in the integer array
+        var i = unitsIntArray.indexOf(Math.min.apply(Math, unitsIntArray));
+        //get the corresponding value in the string array and set it to the unit variable
+        unit = unitsStrArray[i];
+
+     
+        }
+
+    //update tiles on LEVEL TAB click
+        $('body').on("click", ".level-tab", function(){
+            clickedLevel = $(this).attr("level");
+            setLevel( clickedLevel);
+            switchTab(level);
+            setFirstUnit();
+            setLayout();
+
+        });
+
+    //update tiles on unit dropdown click
+        $('body').on("click", ".unitBtn li", function(){
+            var clickedUnit = $(this).attr("unit");
+            setUnit( clickedUnit );
+        });
+
+    //replay sound on current card click click
+        $('body').on("click", ".currentCard", function(){
+            sound.pause();
+            sound.currentTime = 0;
+            playSound();
+        });
+
+        function setLayout(){
+            resetCard();
+            displayCards();
+            arrangeByColumn();
+            setDraggables();
+            unitSelect();  
+            setText();
+        }
+
+
+    //populate the 'units' dropdown with the units in the current level
+        function unitSelect(){
+            $(".unitBtn").find('ul').empty();
+            var unitsArray = [];
+            for(var u in cardData.levels[level].units) { 
+                unitsArray.push(u);
+            };
+
+            $.each(unitsArray, function(){
+                var firstInt = this.split("-")[0]
+                $(".unitBtn").find('ul').append('<li unitLiteral="'+firstInt+'" unit="'+this+'">Unit '+this+'</li>');  
+            });
+            var ul = $(".unitBtn").find('ul');
+            var lis = $(ul).find('li');
+            lis.sort(
+                function(a, b) {
+                  var ela = $(a);
+                  var elb = $(b);
+                  
+                  var res = +ela.attr('unitLiteral') - elb.attr('unitLiteral');
+
+                  return res;
+                }
+
+            ).appendTo(ul);
+        }
+
+
+
+    //update the helper text with values of the current level/unit    
+        function setText(){
+            $("#levelHeading").text('Level '+level);
+            $("#unitHeading").text('Unit '+unit);
+            $("#pUnit").text(unit);
+            $("#pLevel").text(level);
+        }
+
+    //update 'level' variable
+        function setLevel( newLevel ){
+            level = newLevel;
+            setFirstUnit();
+        }
+
+    //update the 'unit' variable and toggle other functions that update the tile layout
+        function setUnit( newUnit ){
+            unit = newUnit;
+            setLayout();
+        }
+
+    //get tiles and show them
+        function displayCards(){
+            $(".cardGrid-inner").empty();
+            $(cardData.levels[level].units[unit].tiles).each(function(){
+                var card = this.toString();
+                var xx = "xx";
+                if ( card == ""){
+                    card = xx;
+
+                }
+
+                // get/set card color
+                var cardColor;
+                if ( typeof cardProps.cards[card]  === "undefined"){
+                    cardColor = "unknownColor";
+                }        
+                else{
+                    cardColor = (cardProps.cards[card].color.toString());
+                }
+
+                // get/set card letter
+                var cardLetter;
+                if ( typeof cardProps.cards[card]  === "undefined"){
+                    cardLetter = this;
+                }        
+                else{
+                    cardLetter = cardProps.cards[card].letter.toString();
+                }
+
+                $(".cardGrid-inner").append('<div class="sc '+cardColor+'" tile="'+(this)+'"><div class="sc-membrane"><span>'+(cardLetter)+'</span></div></div>');
+            });
+        }
+        
+    //group every x cards in a wrapper 
+        function arrangeByColumn(){
+            columns = cardData.levels[level].units[unit].columns;
+            var cards = $(".sc");
+            for(var i = 0; i < cards.length; i+=columns) {
+                cards.slice(i, i+columns).wrapAll("<div class='row'></div>");
+            }
+        };
+
+    //populate top tabs with existing levels
+        function levelTabs(){
+            $(Object.keys(cardData.levels)).each(function(){
+                $(".nav-tabs").append('<li class="level-tab" level="'+(this)+'"><a href="#">Level '+(this)+'</a></li>');
+            });
+            $(".level-tab[level="+level+"]").addClass("activeTab");
+        }
+
+    //changes the appearance of the 'current' level tab when one is clicked.
+        function switchTab(newLevel){
+            $(".level-tab").each(function(){
+                $(this).closest('.level-tab').removeClass("activeTab");
+            });
+            $(".level-tab[level="+newLevel+"]").addClass("activeTab");
+        }
+
+    //show the 'units' menu when clicked (controled by a .on(click) event handler)
+        function showUnitMenu(){
+            $(".unitBtn").find(".dropdown-menu").show();
+        }
+
+    //hide the 'units' menu when focus is lost
+        $(document).mouseup(function(){
+            $(".unitBtn").find(".dropdown-menu").hide();
+        });
+
+    //stop sound
+        function stopSound(){
+            if ( sound != '' ){
+                sound.pause();
+                sound.currentTime = 0; 
+            }
+        }  
+    //play sound 
+        function playSound(){
+            card = $(".currentCard").attr("tile");
+            var cardSound = cardProps.cards[card]
+            if (typeof cardSound === 'undefined' ){}
+            else{
+                sound = new Audio('./sounds/'+cardProps.cards[card].sound);
+                if (typeof sound === 'undefined' ){}
+                else{
+                    sound.play();                
+                }
+            };
+        }
+
+
+// Drag & Drop UI Controls  
+        
+        //set each sound card to be draggable 
+        function setDraggables(){
+            $(".sc").draggable({
+                containment: (".appWrapper"),
+                revert: true,
+                revertDuration: 50
+            });
+        };
+
+        //set the empty cound card on the left 
+        $(".dragTarget").droppable({
+            accept: ".sc",
+            activeClass: "active",
+            hoverClass: "hovered",
+            drop: function (ev, ui){
+
+                var droppedItem = $(ui.draggable).clone();
+                $(droppedItem).addClass("currentCard");
+                $(droppedItem).css("left","0");
+                $(droppedItem).css("top","0");
+                $(droppedItem).css("position","absolute");
+                $(this).append(droppedItem);
+                $(ui.draggable).addClass('hiddenTile activeTile');
+
+                //disable dragging of other cards while one has been dropped
+                $(".sc").draggable({ disabled: true });
+                playSound();
+                
+            },
+            activate: function(ev, ui){
+                $(this).addClass('highlightTarget');
+            },
+            deactivate: function(ev, ui){
+                $(this).removeClass('highlightTarget');
+            }
+        });
+
+        //clear the big card on the left and reactivate the draggables
+        function resetCard(){
+            stopSound();
+            $(".currentCard").remove();
+            $(".activeTile").removeClass('hiddenTile');
+            $(".sc").draggable("enable");
+            
+        }
+
+        </script>
+    </body>
+</html>

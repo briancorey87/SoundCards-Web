@@ -1,0 +1,489 @@
+{ 
+    "cards": {
+        "xx": {
+            "letter": "asd",
+            "color": "hiddenTile",
+            "sound": ""
+        },
+        "a": {
+            "letter": "a",
+            "color": "salmon",
+            "sound": "/K/a.mp3"
+        },
+        "a1": {
+            "letter": "a",
+            "color": "salmon",
+            "sound": "/K/a.mp3"
+        },
+        "ai": {
+            "letter": "ai",
+            "color": "salmon",
+            "sound": "/2/ai.mp3"
+        },
+        "ay": {
+            "letter": "ay",
+            "color": "salmon",
+            "sound": "/2/ay.mp3"
+        },
+        "all": {
+            "letter": "all",
+            "color": "green",
+            "sound": "/K/all.mp3"
+        },
+        "am": {
+            "letter": "am",
+            "color": "green",
+            "sound": "/1/am.mp3"
+        },
+        "an": {
+            "letter": "an",
+            "color": "green",
+            "sound": "/1/an.mp3"
+        },
+        "ang": {
+            "letter": "ang",
+            "color": "green",
+            "sound": "/1/ang.mp3"
+        },
+        "ank": {
+            "letter": "ank",
+            "color": "green",
+            "sound": "/K/ank.mp3"
+        },
+        "ar": {
+            "letter": "ar",
+            "color": "salmon",
+            "sound": "/2/ar.mp3"
+        },
+        "au": {
+            "letter": "au",
+            "color": "salmon",
+            "sound": "/2/au.mp3"
+        },
+        "aw": {
+            "letter": "aw",
+            "color": "salmon",
+            "sound": "/2/aw.mp3"
+        },
+        "b": {
+            "letter": "b",
+            "color": "yellow",
+            "sound": "/K/b.mp3"
+        },
+        "c": {
+            "letter": "c",
+            "color": "yellow",
+            "sound": "/1/c.mp3"
+        },
+        "ch": {
+            "letter": "ch",
+            "color": "yellow",
+            "sound": "ch.mp3"
+        },
+        "ci": {
+            "letter": "ci",
+            "color": "yellow",
+            "sound": "/3/ci.mp3"
+        },
+        "ck": {
+            "letter": "ck",
+            "color": "yellow",
+            "sound": "ck.mp3"
+        },      
+        "d": {
+            "letter": "d",
+            "color": "yellow",
+            "sound": "/1/d.mp3"
+        },
+        "dge": {
+            "letter": "dge",
+            "color": "yellow",
+            "sound": "/3/dge.mp3"
+        }, 
+        "e": {
+            "letter": "e",
+            "color": "salmon",
+            "sound": "/1/e.mp3"
+        }, 
+        "ə": {
+            "letter": "ə",
+            "color": "salmon",
+            "sound": "/3/e_reverse.mp3"
+        }, 
+        "ea": {
+            "letter": "ea",
+            "color": "salmon",
+            "sound": "/2/ea.mp3"
+        },
+        "ee": {
+            "letter": "ee",
+            "color": "salmon",
+            "sound": "/2/ee.mp3"
+        },
+        "eigh": {
+            "letter": "eigh",
+            "color": "salmon",
+            "sound": "/3/eigh.mp3"
+        }, 
+        "ei": {
+            "letter": "ei",
+            "color": "salmon",
+            "sound": "/3/ei.mp3"
+        }, 
+        "er": {
+            "letter": "er",
+            "color": "salmon",
+            "sound": "/2/er.mp3"
+        },
+        "ew": {
+            "letter": "ew",
+            "color": "salmon",
+            "sound": "/2/ew.mp3"
+        },
+        "ey": {
+            "letter": "ey",
+            "color": "salmon",
+            "sound": "/2/ey.mp3"
+        },
+        "ai": {
+            "letter": "ai",
+            "color": "salmon",
+            "sound": "/2/ai.mp3"
+        },   
+        "f": {
+            "letter": "f",
+            "color": "yellow",
+            "sound": "/1/f.mp3"
+        },
+        "g": {
+            "letter": "g",
+            "color": "yellow",
+            "sound": "/1/g.mp3"
+        },
+        "gh": {
+            "letter": "gh",
+            "color": "yellow",
+            "sound": "/3/gh.mp3"
+        },
+        "gn": {
+            "letter": "gn",
+            "color": "yellow",
+            "sound": "/3/gn.mp3"
+        },
+        "h": {
+            "letter": "h",
+            "color": "yellow",
+            "sound": "/1/h.mp3"
+        },
+        "i": {
+            "letter": "i",
+            "color": "salmon",
+            "sound": "/1/i.mp3"
+        },
+        "ie": {
+            "letter": "ei",
+            "color": "salmon",
+            "sound": "/3/ie.mp3"
+        }, 
+        "igh": {
+            "letter": "igh",
+            "color": "salmon",
+            "sound": "/3/igh.mp3"
+        }, 
+        "ild": {
+            "letter": "ild",
+            "color": "green",
+            "sound": "/2/ild.mp3"
+        },
+        "ind": {
+            "letter": "ind",
+            "color": "green",
+            "sound": "/2/ind.mp3"
+        },
+        "ing": {
+            "letter": "ing",
+            "color": "green",
+            "sound": "/1/ing.mp3"
+        },
+        "ink": {
+            "letter": "ink",
+            "color": "green",
+            "sound": "/1/ink.mp3"
+        },
+        "ir": {
+            "letter": "ir",
+            "color": "salmon",
+            "sound": "/2/ir.mp3"
+        },
+        "ive": {
+            "letter": "ive",
+            "color": "green",
+            "sound": "/2/ive.mp3"
+        },
+        "j": {
+            "letter": "j",
+            "color": "yellow",
+            "sound": "/1/j.mp3"
+        },
+        "k": {
+            "letter": "k",
+            "color": "yellow",
+            "sound": "/1/k.mp3"
+        },
+        "kn": {
+            "letter": "kn",
+            "color": "yellow",
+            "sound": "/3/kn.mp3"
+        },
+        "l": {
+            "letter": "l",
+            "color": "yellow",
+            "sound": "/1/l.mp3"
+        },
+        "m": {
+            "letter": "m",
+            "color": "yellow",
+            "sound": "/1/m.mp3"
+        },
+        "mb": {
+            "letter": "mb",
+            "color": "yellow",
+            "sound": "/3/mb.mp3"
+        },
+        "mn": {
+            "letter": "mn",
+            "color": "yellow",
+            "sound": "/3/mn.mp3"
+        },
+        "n": {
+            "letter": "n",
+            "color": "yellow",
+            "sound": "/1/n.mp3"
+        },
+        "o": {
+            "letter": "o",
+            "color": "salmon",
+            "sound": "/1/o.mp3"
+        },
+        "oa": {
+            "letter": "oa",
+            "color": "salmon",
+            "sound": "/2/oa.mp3"
+        },
+        "oe": {
+            "letter": "oe",
+            "color": "salmon",
+            "sound": "/2/oe.mp3"
+        },
+        "oi": {
+            "letter": "oi",
+            "color": "salmon",
+            "sound": "/2/oi.mp3"
+        },
+        "ong": {
+            "letter": "ong",
+            "color": "green",
+            "sound": "/1/ong.mp3"
+        },
+        "onk": {
+            "letter": "onk",
+            "color": "green",
+            "sound": "/1/onk.mp3"
+        },
+        "oo": {
+            "letter": "oo",
+            "color": "salmon",
+            "sound": "/2/oo.mp3"
+        },
+        "old": {
+            "letter": "old",
+            "color": "green",
+            "sound": "/2/old.mp3"
+        },
+        "olt": {
+            "letter": "olt",
+            "color": "green",
+            "sound": "/2/olt.mp3"
+        },
+        "or": {
+            "letter": "or",
+            "color": "salmon",
+            "sound": "/2/or.mp3"
+        },
+        "ost": {
+            "letter": "ost",
+            "color": "green",
+            "sound": "/2/ost.mp3"
+        },
+        "ou": {
+            "letter": "ou",
+            "color": "salmon",
+            "sound": "/2/ou.mp3"
+        },
+        "ow": {
+            "letter": "ow",
+            "color": "salmon",
+            "sound": "/2/ow.mp3"
+        },
+        "oy": {
+            "letter": "oy",
+            "color": "salmon",
+            "sound": "/2/oy.mp3"
+        },
+        "p": {
+            "letter": "p",
+            "color": "yellow",
+            "sound": "/1/p.mp3"
+        },
+        "ph": {
+            "letter": "ph",
+            "color": "yellow",
+            "sound": "/3/ph.mp3"
+        },
+        "q": {
+            "letter": "q",
+            "color": "yellow",
+            "sound": "/1/q.mp3"
+        },
+        "qu": {
+            "letter": "qu",
+            "color": "yellow",
+            "sound": "/1/qu.mp3"
+        },
+        "r": {
+            "letter": "r",
+            "color": "yellow",
+            "sound": "/1/r.mp3"
+        },
+        "rh": {
+            "letter": "rh",
+            "color": "yellow",
+            "sound": "/3/rh.mp3"
+        },
+        "s": {
+            "letter": "s",
+            "color": "yellow",
+            "sound": "/1/s.mp3"
+        },
+        "sh": {
+            "letter": "sh",
+            "color": "yellow",
+            "sound": "sh.mp3"
+        }, 
+        "sion": {
+            "letter": "sion",
+            "color": "green",
+            "sound": "/3/sion.mp3"
+        }, 
+        "stle": {
+            "letter": "stle",
+            "color": "green",
+            "sound": "/3/stle.mp3"
+        },      
+        "t": {
+            "letter": "t",
+            "color": "yellow",
+            "sound": "/1/t.mp3"
+        },
+        "tch": {
+            "letter": "tch",
+            "color": "yellow",
+            "sound": "/3/tch.mp3"
+        },
+        "th": {
+            "letter": "th",
+            "color": "yellow",
+            "sound": "th.mp3"
+        },
+        "ti": {
+            "letter": "ti",
+            "color": "yellow",
+            "sound": "/3/ti.mp3"
+        },
+        "tion": {
+            "letter": "tion",
+            "color": "green",
+            "sound": "/3/tion.mp3"
+        },
+        "tu": {
+            "letter": "tu",
+            "color": "green",
+            "sound": "/3/tu.mp3"
+        },
+        "ture": {
+            "letter": "ture",
+            "color": "green",
+            "sound": "/3/ture.mp3"
+        }, 
+        "u": {
+            "letter": "u",
+            "color": "salmon",
+            "sound": "/1/u.mp3"
+        },
+        "ue": {
+            "letter": "ue",
+            "color": "salmon",
+            "sound": "/2/ue2.mp3"
+        },
+        "ui": {
+            "letter": "ui",
+            "color": "salmon",
+            "sound": "/3/ui.mp3"
+        }, 
+        "ung": {
+            "letter": "ung",
+            "color": "green",
+            "sound": "/1/ung.mp3"
+        },
+        "unk": {
+            "letter": "unk",
+            "color": "green",
+            "sound": "/1/unk.mp3"
+        },
+        "ur": {
+            "letter": "ur",
+            "color": "salmon",
+            "sound": "/2/ur.mp3"
+        },
+        "v": {
+            "letter": "v",
+            "color": "yellow",
+            "sound": "/1/v.mp3"
+        },
+        "w": {
+            "letter": "w",
+            "color": "yellow",
+            "sound": "/1/w.mp3"
+        },
+        "wh": {
+            "letter": "wh",
+            "color": "yellow",
+            "sound": "wh.mp3"
+        },
+        "wr": {
+            "letter": "wr",
+            "color": "yellow",
+            "sound": "/3/wr.mp3"
+        },
+        "x": {
+            "letter": "x",
+            "color": "yellow",
+            "sound": "/1/x.mp3"
+        },
+        "y": {
+            "letter": "y",
+            "color": "yellow",
+            "sound": "/1/y.mp3"
+        },
+        "y_vowel": {
+            "letter": "y",
+            "color": "salmon",
+            "sound": "/3/y_vowel.mp3"
+        },
+        "z": {
+            "letter": "z",
+            "color": "yellow",
+            "sound": "/1/z.mp3"
+        }
+    }
+}
